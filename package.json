@@ -1,0 +1,14 @@
+{
+  "pacman": {
+    "installdir": "/services/{{name}}/frontend",
+    "content": {
+      "${installdir}/": {
+        "base": "public"
+      },
+      "/etc/nginx/config.d/${name}.conf": "pacman/nginx.conf"
+    },
+    "depends": {
+      "nginx-mainline": ">=1.17.7"
+    }
+  }
+}
