@@ -10,5 +10,8 @@
     "depends": {
       "nginx-mainline": ">=1.17.7"
     }
+  },
+  "template": {
+    "usedBy": [ "arlac77/npm-package-template-kronos-app" ]
   }
 }
