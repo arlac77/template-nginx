@@ -3,13 +3,16 @@
     "hooks": "pacman/hooks.sh",
     "installdir": "/services/{{name}}/frontend",
     "content": {
-      "/etc/nginx/config.d/${name}.conf": "pacman/nginx.conf"
+      "{{nginx.config_dir}}/${name}.conf": "pacman/nginx.conf"
     },
     "depends": {
-      "nginx-mainline": ">=1.19.3"
+      "nginx-mainline": ">=1.19.6"
     }
   },
   "template": {
+    "properties": {
+      "nginx": { "config_dir" : "/etc/nginx/config.d" }
+    },
     "usedBy": [
       "arlac77/npm-dep-graph",
       "arlac77/template-kronos-app",
