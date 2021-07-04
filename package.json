@@ -3,7 +3,8 @@
     "hooks": "pacman/hooks.sh",
     "installdir": "/services/{{name}}/frontend",
     "content": {
-      "{{nginx.config_dir}}/${name}.conf": "pacman/nginx.conf"
+      "{{nginx.config_dir}}/${name}.conf": "pacman/nginx.conf",
+      "/etc/nginx/config.d/${name}.conf": "--delete--"
     },
     "depends": {
       "nginx-mainline": ">=1.21.0"
