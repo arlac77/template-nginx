@@ -11,7 +11,7 @@
   },
   "template": {
     "properties": {
-      "nginx": { "config_dir" : "/etc/nginx/config.d" }
+      "nginx": { "config_dir" : "/etc/nginx/sites/common" }
     },
     "usedBy": [
       "arlac77/npm-dep-graph",
