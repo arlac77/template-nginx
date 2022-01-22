@@ -7,7 +7,7 @@
       "/etc/nginx/config.d/${name}.conf": "--delete--"
     },
     "depends": {
-      "nginx-mainline": ">=1.21.1"
+      "nginx-mainline": ">=1.21.4"
     }
   },
   "template": {
