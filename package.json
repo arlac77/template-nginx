@@ -1,7 +1,6 @@
 {
   "pkg": {
     "hooks": "pkg/hooks.sh",
-    "installdir": "/services/{{name}}/frontend",
     "content": {
       "{{nginx.config_dir}}/${name}.conf": "pkg/nginx.conf",
       "/etc/nginx/config.d/${name}.conf": "--delete--"
