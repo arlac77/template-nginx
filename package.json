@@ -1,9 +1,8 @@
 {
-  "pacman": {
-    "hooks": "pacman/hooks.sh",
-    "installdir": "/services/{{name}}/frontend",
+  "pkg": {
+    "hooks": "pkg/hooks.sh",
     "content": {
-      "{{nginx.config_dir}}/${name}.conf": "pacman/nginx.conf",
+      "{{nginx.config_dir}}/${name}.conf": "pkg/nginx.conf",
       "/etc/nginx/config.d/${name}.conf": "--delete--"
     },
     "depends": {
@@ -15,6 +14,7 @@
       "nginx": { "config_dir" : "/etc/nginx/sites/common" }
     },
     "usedBy": [
+      "konsumation/konsum",
       "arlac77/npm-dep-graph",
       "arlac77/template-kronos-app",
       "arlac77/template-web-app"
