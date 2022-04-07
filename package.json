@@ -2,8 +2,7 @@
   "pkg": {
     "hooks": "pkg/hooks.sh",
     "content": {
-      "{{nginx.config_dir}}/${name}.conf": "pkg/nginx.conf",
-      "/etc/nginx/config.d/${name}.conf": "--delete--"
+      "{{nginx.config_dir}}/${name}.conf": "pkg/nginx.conf"
     },
     "depends": {
       "nginx-mainline": ">=1.21.4"
