@@ -2,7 +2,7 @@
   "pkg": {
     "hooks": "pkg/hooks.sh",
     "content": {
-      "{{nginx.config_dir}}/${name}.conf": "pkg/nginx.conf"
+      "{{nginx.config_dir}}${name}.conf": "pkg/nginx.conf"
     },
     "depends": {
       "nginx-mainline": ">=1.21.4"
@@ -10,7 +10,7 @@
   },
   "template": {
     "properties": {
-      "nginx": { "config_dir" : "/etc/nginx/sites/common" }
+      "nginx": { "config_dir" : "/etc/nginx/sites/common/" }
     },
     "usedBy": [
       "konsumation/konsum",
