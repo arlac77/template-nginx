@@ -3,9 +3,6 @@
     "hooks": "pkg/hooks.sh",
     "content": {
       "${nginx.sites.dir}${name}.conf": "pkg/nginx.conf"
-    },
-    "depends": {
-      "nginx-mainline": ">=1.21.4"
     }
   },
   "template": {
