@@ -1,6 +1,5 @@
 {
   "pkgbuild": {
-    "hooks": "pkg/hooks.sh",
     "content": {
       "${nginx.sites.dir}${name}.conf": "pkg/nginx.conf"
     }
