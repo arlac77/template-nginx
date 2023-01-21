@@ -1,9 +1,4 @@
 {
-  "pkgbuild": {
-    "content": {
-      "${nginx.sites.dir}${name}.conf": "pkg/nginx.conf"
-    }
-  },
   "template": {
     "usedBy": [
       "konsumation/konsum",
